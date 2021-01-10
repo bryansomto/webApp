@@ -1,5 +1,5 @@
 # webApp
-Contain Web-based applications built on front-end languages.
+Front-end web-based applications.
 
 # calculator.html
 A scientific calculator still in development. Basic features unavailable includes;
