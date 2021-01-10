@@ -19,9 +19,6 @@
     
 
     <style type="text/css" media="all">
-      {
-        border: solid 1px black;
-      }
       .calculator-body{
         font-family: 'Titillium Web', sans-serif;
         border: solid 2px #555;
@@ -65,7 +62,6 @@
         padding-top: 15px;
       }
       table{
-        /*width: inherit;*/
         margin-top: 3%;
         height: 30vh;
       }
@@ -258,24 +254,12 @@
           document.getElementById("input-field2").value += "*";
         });
        
-        // $("#del").on("click", function (){
-        //   var x = $("#input-field").val();
-        //   var y = $("#input-field").val().length;
-          
-        //   if (typeof (x[y-1]) === "string"){
-        //     alert("num");
-        //   }
-        //   // var a = x.slice(0, y-1);
-        //   // $("#input-field").val(a);
-        // });
-        
         $("#cls").on("click", function (){
           $("#input-field").val("");
           $("#input-field2").val("");
           $("#result").html("");
         });
         
-    
         $("#equal").on("click",function (){
           var x = $("#input-field2").val();
           var left = x.match(/\u0028/g);
@@ -313,7 +297,7 @@
             }
           }
         });
-     
+
       });
     </script>
   </head>
