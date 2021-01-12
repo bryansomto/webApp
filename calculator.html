@@ -301,16 +301,14 @@
             $("#input-field2").val(value2);
           }
           else if (log_lindex > sin_lindex && log_lindex > cos_lindex && log_lindex > tan_lindex && log_lindex > num_lindex && log_lindex > ln_lindex && log_lindex > percent_lindex && log_lindex > sqrt_lindex && log_lindex > power_lindex && log_lindex > euler_lindex && log_lindex > pi_lindex && log_lindex > exp_lindex && log_lindex > pow2_lindex && log_lindex > asin_lindex && log_lindex > acos_lindex && log_lindex > atan_lindex){
-            var value = x.replace(/log$/g, "");
-            var value2 = y.replace(/Math\.log10$/g, "");
-            var value3 = x.replace(/log\($/g, "");
-            var value4 = y.replace(/Math\.log10\($/g, "");
+            var value = x.replace(/log\(+$/g, "");
+            var value2 = y.replace(/Math\.log10\(+$/g, "");
             $("#input-field").val(value);
             $("#input-field2").val(value2);
           }
           else if (ln_lindex > sin_lindex && ln_lindex > cos_lindex && ln_lindex > tan_lindex && ln_lindex > num_lindex && ln_lindex > log_lindex && ln_lindex > percent_lindex && ln_lindex > sqrt_lindex && ln_lindex > power_lindex && ln_lindex > euler_lindex && ln_lindex > pi_lindex && ln_lindex > exp_lindex && ln_lindex > pow2_lindex && ln_lindex > asin_lindex && ln_lindex > acos_lindex && ln_lindex > atan_lindex){
-            var value = x.replace(/ln$/g, "");
-            var value2 = y.replace(/Math\.log$/g, "");
+            var value = x.replace(/ln\(+$/g, "");
+            var value2 = y.replace(/Math\.log\(+$/g, "");
             $("#input-field").val(value);
             $("#input-field2").val(value2);
           }
@@ -321,8 +319,8 @@
             $("#input-field2").val(value2);
           }
           else if (sqrt_lindex > sin_lindex && sqrt_lindex > cos_lindex && sqrt_lindex > tan_lindex && sqrt_lindex > num_lindex && sqrt_lindex > log_lindex && sqrt_lindex > percent_lindex && ln_lindex < sqrt_lindex && sqrt_lindex > power_lindex && sqrt_lindex > euler_lindex && sqrt_lindex > pi_lindex && sqrt_lindex > exp_lindex && sqrt_lindex > pow2_lindex && sqrt_lindex > asin_lindex && sqrt_lindex > acos_lindex && sqrt_lindex > atan_lindex){
-            var value = x.replace(/\√$/g, "");
-            var value2 = y.replace(/Math\.sqrt$/g, "");
+            var value = x.replace(/\√\(+$/g, "");
+            var value2 = y.replace(/Math\.sqrt\(+$/g, "");
             $("#input-field").val(value);
             $("#input-field2").val(value2);
           }
@@ -345,8 +343,8 @@
             $("#input-field2").val(value2);
           }
           else if (exp_lindex > sin_lindex && exp_lindex > cos_lindex && exp_lindex > tan_lindex && exp_lindex > num_lindex & exp_lindex > log_lindex && exp_lindex > ln_lindex && exp_lindex > percent_lindex && exp_lindex > power_lindex && exp_lindex > euler_lindex && exp_lindex > sqrt_lindex && exp_lindex > pi_lindex && exp_lindex > pow2_lindex && exp_lindex > asin_lindex && exp_lindex > acos_lindex && exp_lindex > atan_lindex){
-            var value = x.replace(/exp$/g, "");
-            var value2 = y.replace(/Math\.E\*\*$/g, "");
+            var value = x.replace(/exp\(+$/g, "");
+            var value2 = y.replace(/Math\.E\*\*\(+$/g, "");
             $("#input-field").val(value);
             $("#input-field2").val(value2);
           }
